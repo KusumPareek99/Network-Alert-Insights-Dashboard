@@ -20,8 +20,10 @@ ChartJS.register(
   Legend
 );
 
-// Extract destination ports from alerts data
-const destinationPorts = alertsData.map((alert) => alert.dest_port);
+// extract unique destination ports from alerts data
+const destinationPorts = [
+  ...new Set(alertsData.map((alert) => alert.dest_port)),
+];
 
 // Function to count alerts for a given destination port
 function countAlerts(port) {

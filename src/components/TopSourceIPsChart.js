@@ -20,8 +20,8 @@ ChartJS.register(
   Legend
 );
 
-// Extract source IPs from alerts data
-const sourceIPs = alertsData.map((alert) => alert.src_ip);
+// extract unique source IPs from alerts data
+const sourceIPs = [...new Set(alertsData.map((alert) => alert.src_ip))];
 
 // Function to count alerts for a given source IP
 function countAlerts(sourceIP) {

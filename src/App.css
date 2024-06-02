@@ -1,4 +1,6 @@
-body, html, #root {
+body,
+html,
+#root {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -10,7 +12,8 @@ body {
   color: #ffffff;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #ffffff;
 }
 
@@ -40,12 +43,6 @@ h1, h2 {
 
 .sidebar a:hover {
   background-color: #333333;
-
-}
-
-.sidebar a:active{
-  background-color: lavender;
-  color: #1e1e1e;
 }
 
 .topbar {
@@ -78,15 +75,11 @@ h1, h2 {
   margin: 0 0 20px 0;
 }
 
-.pie-container{
- 
+.pie-container {
   width: 60% !important;
   height: 60% !important;
   margin-left: 18% !important;
-
 }
-
-
 
 @media (max-width: 768px) {
   .sidebar {
